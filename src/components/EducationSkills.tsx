@@ -33,7 +33,7 @@ export default function EducationSkills() {
   ];
 
   return (
-    <section className="relative z-20 py-12 px-8 md:px-24 overflow-hidden">
+    <section className="relative z-20 py-12 px-5 md:px-24 overflow-hidden">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
         
         {/* Education */}
@@ -47,8 +47,8 @@ export default function EducationSkills() {
           <div className="space-y-6">
             {education.map((edu, index) => (
               <div key={index} className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
-                <div className="flex justify-between items-start gap-4 mb-2">
-                  <h4 className="text-xl font-bold">{edu.degree}</h4>
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-2 sm:gap-4 mb-2">
+                  <h4 className="text-lg md:text-xl font-bold">{edu.degree}</h4>
                   <span className="text-xs px-3 py-1 rounded-full border border-white/10 bg-white/5 whitespace-nowrap">
                     {edu.year}
                   </span>
@@ -71,7 +71,7 @@ export default function EducationSkills() {
             {skills.map((skill, index) => (
               <div 
                 key={index} 
-                className="px-6 py-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-md text-[#ededed]/90 font-medium hover:bg-white/10 transition-colors"
+                className="px-4 md:px-6 py-3 md:py-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-md text-[#ededed]/90 text-sm md:text-base font-medium hover:bg-white/10 transition-colors"
               >
                 {skill}
               </div>

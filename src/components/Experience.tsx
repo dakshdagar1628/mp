@@ -142,9 +142,9 @@ export default function Experience() {
   ];
 
   return (
-    <section className="relative z-20 py-24 px-8 md:px-24 overflow-hidden">
+    <section className="relative z-20 py-16 md:py-24 px-5 md:px-24 overflow-hidden">
       <div className="max-w-6xl mx-auto">
-        <h3 className="text-3xl md:text-5xl font-semibold mb-16 tracking-tight">
+        <h3 className="text-2xl md:text-5xl font-semibold mb-8 md:mb-16 tracking-tight">
           Professional Journey
         </h3>
 
@@ -156,11 +156,11 @@ export default function Experience() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.1 }}
               key={exp.id} 
-              className="relative p-8 md:p-12 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md"
+              className="relative p-5 md:p-12 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md"
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
                 <div>
-                  <h4 className="text-2xl font-bold">{exp.role}</h4>
+                  <h4 className="text-xl md:text-2xl font-bold">{exp.role}</h4>
                   <p className="text-lg text-[#ededed]/70">{exp.company}</p>
                 </div>
                 <div className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm whitespace-nowrap w-fit">
@@ -174,7 +174,7 @@ export default function Experience() {
               {exp.points && (
                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-[#ededed]/60 list-disc list-inside">
                    {exp.points.map((point, i) => (
-                     <li key={i} className="truncate-multiline leading-relaxed">{point}</li>
+                     <li key={i} className="leading-relaxed">{point}</li>
                    ))}
                  </ul>
               )}
@@ -186,7 +186,7 @@ export default function Experience() {
                       <h5 className="text-[#ededed] font-medium mb-3 border-b border-white/10 pb-2">{cat.name}</h5>
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-[#ededed]/60 list-disc list-inside">
                         {cat.items.map((item, j) => (
-                          <li key={j} className="truncate-multiline leading-relaxed">{item}</li>
+                          <li key={j} className="leading-relaxed">{item}</li>
                         ))}
                       </ul>
                     </div>

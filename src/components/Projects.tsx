@@ -33,9 +33,9 @@ export default function Projects() {
   ];
 
   return (
-    <section className="relative z-20 py-32 px-8 md:px-24">
+    <section className="relative z-20 py-16 md:py-32 px-5 md:px-24">
       <div className="max-w-6xl mx-auto">
-        <h3 className="text-3xl md:text-5xl font-semibold mb-16 tracking-tight">
+        <h3 className="text-2xl md:text-5xl font-semibold mb-8 md:mb-16 tracking-tight">
           Selected Work
         </h3>
 
@@ -43,7 +43,7 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group relative flex flex-col justify-end p-8 h-80 rounded-2xl overflow-hidden cursor-pointer bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-500 hover:border-white/20 hover:bg-white/10"
+              className="group relative flex flex-col justify-end p-5 md:p-8 h-60 md:h-80 rounded-2xl overflow-hidden cursor-pointer bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-500 hover:border-white/20 hover:bg-white/10"
             >
               {/* Optional Background Image */}
               {project.image && (
@@ -63,7 +63,7 @@ export default function Projects() {
                 <p className="text-sm font-medium text-zinc-400 mb-2">
                   {project.category}
                 </p>
-                <h4 className="text-2xl font-bold mb-2">
+                <h4 className="text-lg md:text-2xl font-bold mb-2">
                   {project.title}
                 </h4>
                 <p className="text-zinc-300 opacity-0 group-hover:opacity-100 transition-opacity duration-500 line-clamp-2">

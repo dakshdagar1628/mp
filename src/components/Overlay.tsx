@@ -34,12 +34,12 @@ export default function Overlay() {
         {/* Section 1 */}
         <motion.div
            style={{ opacity: opacity1, y: y1, display: display1 as any }}
-           className="absolute inset-0 flex-col items-center justify-center text-center px-4"
+           className="absolute inset-0 flex-col items-center justify-center text-center px-6 md:px-4"
         >
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-3 md:mb-4">
             Mahesh Rawat.
           </h1>
-          <p className="text-lg md:text-xl text-zinc-400 max-w-lg">
+          <p className="text-base sm:text-lg md:text-xl text-zinc-400 max-w-xs sm:max-w-lg">
             Senior Design Lead & Architect. Crafting spaces that engage and evoke emotions.
           </p>
         </motion.div>
@@ -47,12 +47,12 @@ export default function Overlay() {
         {/* Section 2 */}
         <motion.div
           style={{ opacity: opacity2, y: y2 }}
-          className="absolute inset-y-0 left-8 md:left-24 flex flex-col justify-center text-left"
+          className="absolute inset-y-0 left-6 md:left-24 right-6 md:right-auto flex flex-col justify-center text-left"
         >
-          <h2 className="text-4xl md:text-6xl font-semibold mb-4 leading-tight">
+          <h2 className="text-2xl sm:text-4xl md:text-6xl font-semibold mb-3 md:mb-4 leading-tight">
             14 Years of <br /> Excellence.
           </h2>
-          <p className="text-md md:text-lg text-zinc-400 max-w-sm">
+          <p className="text-sm sm:text-md md:text-lg text-zinc-400 max-w-[280px] sm:max-w-sm">
             Leveraging technical expertise to deliver prestigious commercial, public, and residential buildings.
           </p>
         </motion.div>
@@ -60,12 +60,12 @@ export default function Overlay() {
         {/* Section 3 */}
         <motion.div
           style={{ opacity: opacity3, y: y3 }}
-          className="absolute inset-y-0 right-8 md:right-24 flex flex-col justify-center text-right"
+          className="absolute inset-y-0 right-6 md:right-24 left-6 md:left-auto flex flex-col justify-center text-right"
         >
-          <h2 className="text-4xl md:text-6xl font-semibold mb-4 leading-tight">
+          <h2 className="text-2xl sm:text-4xl md:text-6xl font-semibold mb-3 md:mb-4 leading-tight">
             Inception to <br /> Execution.
           </h2>
-          <p className="text-md md:text-lg text-zinc-400 max-w-sm ml-auto">
+          <p className="text-sm sm:text-md md:text-lg text-zinc-400 max-w-[280px] sm:max-w-sm ml-auto">
             Leading teams with specialized focus on space planning, coordination, and detail-driven design.
           </p>
         </motion.div>

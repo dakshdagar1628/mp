@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "title": "Lawrence School Sanawar",
+    "cover": "/extracted/page_2_img_2.jpeg",
+    "images": [
+      "/extracted/page_2_img_2.jpeg",
+      "/extracted/page_2_img_3.jpeg",
+      "/extracted/page_3_img_1.jpeg",
+      "/extracted/page_4_img_1.jpeg",
+      "/extracted/page_5_img_1.jpeg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Office Building \u2013 Jhunjhunwala, Lucknow",
+    "cover": "/extracted/page_6_img_1.jpeg",
+    "images": [
+      "/extracted/page_6_img_1.jpeg",
+      "/extracted/page_7_img_1.jpeg",
+      "/extracted/page_8_img_1.jpeg",
+      "/extracted/page_9_img_1.jpeg",
+      "/extracted/page_9_img_2.jpeg",
+      "/extracted/page_9_img_3.jpeg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Office Space \u2013 Akhil Sibal, Jorbag",
+    "cover": "/extracted/page_10_img_1.jpeg",
+    "images": [
+      "/extracted/page_10_img_1.jpeg",
+      "/extracted/page_11_img_1.jpeg",
+      "/extracted/page_12_img_1.jpeg",
+      "/extracted/page_13_img_1.jpeg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Villas at 7 Hailey Road",
+    "cover": "/extracted/page_14_img_1.jpeg",
+    "images": [
+      "/extracted/page_14_img_1.jpeg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Villa-B \u2013 Kapil Sibal",
+    "cover": "/extracted/page_15_img_1.jpeg",
+    "images": [
+      "/extracted/page_15_img_1.jpeg",
+      "/extracted/page_16_img_1.jpeg",
+      "/extracted/page_17_img_1.jpeg",
+      "/extracted/page_17_img_2.jpeg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Villa-B Interiors",
+    "cover": "/extracted/page_18_img_1.jpeg",
+    "images": [
+      "/extracted/page_18_img_1.jpeg",
+      "/extracted/page_18_img_2.jpeg",
+      "/extracted/page_19_img_1.jpeg",
+      "/extracted/page_20_img_1.jpeg",
+      "/extracted/page_20_img_2.jpeg",
+      "/extracted/page_21_img_1.jpeg",
+      "/extracted/page_21_img_2.jpeg"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Residence \u2013 Rajender Gupta, Shanti Niketan",
+    "cover": "/extracted/page_22_img_1.jpeg",
+    "images": [
+      "/extracted/page_22_img_1.jpeg",
+      "/extracted/page_23_img_1.jpeg",
+      "/extracted/page_24_img_1.jpeg",
+      "/extracted/page_25_img_1.jpeg",
+      "/extracted/page_25_img_2.jpeg",
+      "/extracted/page_26_img_1.jpeg",
+      "/extracted/page_26_img_2.jpeg",
+      "/extracted/page_26_img_3.jpeg",
+      "/extracted/page_26_img_4.jpeg"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Interiors \u2013 Trident, Shantiniketan",
+    "cover": "/extracted/page_27_img_1.jpeg",
+    "images": [
+      "/extracted/page_27_img_1.jpeg",
+      "/extracted/page_27_img_2.jpeg",
+      "/extracted/page_28_img_1.jpeg",
+      "/extracted/page_28_img_2.jpeg",
+      "/extracted/page_29_img_1.jpeg",
+      "/extracted/page_29_img_2.jpeg"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Residence \u2013 Himanshu Baid, GK-1",
+    "cover": "/extracted/page_30_img_1.jpeg",
+    "images": [
+      "/extracted/page_30_img_1.jpeg",
+      "/extracted/page_30_img_2.jpeg",
+      "/extracted/page_31_img_1.jpeg",
+      "/extracted/page_31_img_2.jpeg"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Residence \u2013 Anil Bammi, Gurugram",
+    "cover": "/extracted/page_32_img_1.jpeg",
+    "images": [
+      "/extracted/page_32_img_1.jpeg"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Dr. Dang's Lab, SDA",
+    "cover": "/extracted/page_33_img_2.jpeg",
+    "images": [
+      "/extracted/page_33_img_2.jpeg"
+    ]
+  }
+]
