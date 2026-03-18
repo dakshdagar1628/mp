@@ -42,18 +42,19 @@ export default function ScrollyCanvas() {
   useEffect(() => {
     if (images.length === 0 || !canvasRef.current) return;
 
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
+    const updateCanvasSize = () => {
+      if (!canvasRef.current) return;
+      canvasRef.current.width = window.innerWidth;
+      canvasRef.current.height = window.innerHeight;
+    };
 
     const render = (index: number) => {
-      if (!images[index]) return;
+      if (!images[index] || !canvasRef.current) return;
 
       const img = images[index];
-
-      // Match canvas internal resolution to window size to avoid blurry rendering
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      const canvas = canvasRef.current;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return;
 
       // Object-fit: cover logic
       const scale = Math.max(canvas.width / img.width, canvas.height / img.height);
@@ -64,16 +65,19 @@ export default function ScrollyCanvas() {
       ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
     };
 
-    // Initial render
+    // Initial setup
+    updateCanvasSize();
     render(0);
 
     // Update on scroll
     const unsubscribe = frameIndex.on("change", (latest) => {
-      // Ensure we stick to an integer index
       render(Math.round(latest));
     });
 
-    const handleResize = () => render(Math.round(frameIndex.get()));
+    const handleResize = () => {
+      updateCanvasSize();
+      render(Math.round(frameIndex.get()));
+    };
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -95,6 +99,8 @@ export default function ScrollyCanvas() {
           ref={canvasRef}
           className="w-full h-full block"
         />
+        {/* Subtle vignette for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40 pointer-events-none" />
       </motion.div>
     </div>
   );
