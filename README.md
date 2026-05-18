@@ -35,27 +35,7 @@
 
 ---
 
-## 🚀 Run Locally
 
-```bash
-git clone https://github.com/dakshdagar1628/mp.git
-cd mp
-npm install
-npm run dev
-```
-
-Open **http://localhost:3000** in your browser.
-
----
-
-## 📦 Build
-
-```bash
-npm run build
-npm run start
-```
-
----
 
 ## 👤 About Me
 
