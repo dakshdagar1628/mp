@@ -1,28 +1,31 @@
 export default function Footer() {
   return (
-    <footer className="relative z-20 py-12 md:py-16 px-5 md:px-24 bg-[#121212]/30 backdrop-blur-md border-t border-white/10 text-[#ededed]/60">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-        
-        <div>
-          <h4 className="text-2xl font-bold text-white mb-2">Mahesh Rawat</h4>
-          <p className="max-w-xs">Senior Design Lead & Architect</p>
-          <p className="mt-4 text-sm">Holi chowk sector -58, NIT-1, Faridabad</p>
+    <>
+      <section className="contact-section" id="contact" aria-labelledby="contact-title">
+        <div className="section-shell contact-inner" data-reveal>
+          <div>
+            <p className="eyebrow eyebrow-light">Contact</p>
+            <h2 id="contact-title">Discuss a project.</h2>
+            <p className="contact-intro">For project enquiries, contact Mahesh directly.</p>
+          </div>
+          <div className="contact-details">
+            <a href="mailto:mahesh61909@gmail.com">mahesh61909@gmail.com <span aria-hidden="true">↗</span></a>
+            <a href="tel:+919599512632">+91 9599512632</a>
+            <a href="https://www.linkedin.com/in/mahesh-rawat-b70b1a54" target="_blank" rel="noreferrer">
+              LinkedIn profile <span aria-hidden="true">↗</span>
+            </a>
+            <address>Faridabad, Haryana (NCR)</address>
+          </div>
         </div>
+      </section>
 
-        <div className="flex flex-col gap-2 text-center md:text-right">
-          <a href="mailto:mahesh61909@gmail.com" className="hover:text-white transition-colors duration-300">
-            mahesh61909@gmail.com
-          </a>
-          <a href="tel:+919599512632" className="hover:text-white transition-colors duration-300">
-            +91 9599512632
-          </a>
+      <footer className="site-footer">
+        <div className="section-shell footer-inner">
+          <span>Mahesh Rawat</span>
+          <span>Senior Architect · Design Lead</span>
+          <span>© {new Date().getFullYear()} Mahesh Rawat</span>
         </div>
-
-      </div>
-      
-      <div className="max-w-6xl mx-auto mt-16 text-center text-xs text-white/30">
-        &copy; {new Date().getFullYear()} Mahesh Rawat. All Rights Reserved.
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 }
